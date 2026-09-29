@@ -1,0 +1,14 @@
+GOAL : The password for the next level is stored in a file called --spaces in this filename-- located in the home directory
+
+COMMANDS : ls , cd , cat , file , du , find
+
+The filename which consisted password was "--spaces in this filename--"
+
+COMMANDS USED : cat --"--spaces in this filename--"
+
+OR 
+ 
+cat ./"--spaces in this filename--"
+  
+
+PASSWORD FOR LEVEL 3 IS :7ZZ2LFrykP2zEyvBl4m3clcL7tGYJPME

@@ -1,0 +1,12 @@
+GOAL : The password for the next level is stored in a hidden file in the inhere directory.
+
+COMMANDS : ls , cd , cat , file , du , find
+
+The password was in inhere/ directory
+and in the directory the filename named "...Hidden-From-You" consisted the password for the next level 
+
+COMMANDS USED : ls -alps
+cd inhere/
+cat ./"...Hidden-From-You"
+
+PASSWORD FOR LEVEL 4 IS : xzTXq1rDJQVVAzdv5cHq1TQytTWufAMq

@@ -1,0 +1,12 @@
+GOAL : The password for the next level is stored in a file called - located in the home directory
+
+COMMANDS : ls , cd , cat , file , du , find
+
+COMMANDS USED : 
+ls -alps 
+-a->all
+-l->long format
+-p->indicator
+-s->size
+
+PASSWORD FOR LEVEL 2 WAS : PK8fYLZg2hnHSz83plBL1iEPKdD3QToB
