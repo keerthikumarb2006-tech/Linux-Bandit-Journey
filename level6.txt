@@ -1,0 +1,20 @@
+GOAL : The password for the next level is stored somewhere on the server and has all of the following properties:
+
+COMMANDS :ls , cd , cat , file , du , find , grep
+
+GIVEN :
+
+owned by user bandit7
+owned by group bandit6
+33 bytes in size
+
+COMMANDS USED : 
+
+$find / -type f -user bandit7 -group bandit6 -size 33c
+
+$cat /var/lib/dpkg/info/bandit7.password
+
+
+PASSWORD FOR LEVEL 7 : Bmnnvf82KzQlfxgAI2d1zYbr1u9pr3E3
+
+password was found in "/var/lib/dpkg/info/bandit7.password"

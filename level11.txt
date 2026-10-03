@@ -1,0 +1,13 @@
+GOAL : The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
+
+COMMANDS : grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
+
+GIVEN : the password present in data.txt is in rot13.
+
+COMMANDS USED :
+$ls
+$cat data.txt
+ 
+PASSWORD FOR LEVEL 12 : GROozWPO8QyN0mGrjUkID0WCYkZiQxrN
+
+This password was decrypted using CYBERCHEF which is an online open source tool 

@@ -1,0 +1,16 @@
+GOAL: The password for the next level is stored in the file data.txt, which contains base64 encoded data
+
+COMMANDS : grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
+
+GIVEN : password is encoded in base64 format
+
+COMMANDS USED : 
+
+$ls
+$cat data.txt -> which prints the password in base64 format 
+$base64 -d data.txt ->this command  decrypts the password and gives use the password in human readable form 
+
+PASSWORD FOR LEVEL 11 : pYfOY6HwUsDj5rL9UvyhU7MCmv8vN5Ro
+
+base64 -> encode/decode data and print to standard output With  no
+       FILE, or when FILE is -, read standard input.

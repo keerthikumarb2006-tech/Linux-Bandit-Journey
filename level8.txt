@@ -1,0 +1,19 @@
+level8
+
+GOAL : The password for the next level is stored in the file data.txt and is the only line of text that occurs only once
+
+COMMANDS :grep, sort, uniq, strings, base64, tr, tar, gzip, bzip2, xxd
+
+GIVEN : "THE PASSWORDAPPEARS ONLY ONCE "
+
+COMMANDS USED : 
+
+$sort data.txt | uniq -c
+
+PASSWORD FOR LEVEL 9 : EjmOSvuAu7sGAHqHVcBDPirRe9T03kxl
+
+I found the password using this 2 new commands 
+
+1-> sort :which sorts any number of elements in the file 
+2->uniq : this command will  report or omit the repeated lines
+3-> -c OR --count : this says which password appears how many times  
