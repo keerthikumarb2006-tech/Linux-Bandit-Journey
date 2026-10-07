@@ -1,0 +1,25 @@
+GOAL : There is a setuid binary in the homedirectory that does the following: it makes a connection to localhost on the port you specify as a commandline argument. It then reads a line of text from the connection and compares it to the password in the previous level (bandit20). If the password is correct, it will transmit the password for the next level (bandit21).
+
+COMMANDS : ssh, nc, cat, bash, screen, tmux, Unix ‘job control’ (bg, fg, jobs, &, CTRL-Z, …)
+
+GIVEN : it reads the text from the connection and compares it to the level 20 password if it is correct then it returns "level21 password"
+
+COMMANDS USED : 
+
+TERMINAL 1 : $nc -l 12345
+-->This waits for the setuid binary to connect.
+
+TERMINAL 2: $ ./suconnect 12345
+It will connect to your listener and wait for a line of input.
+
+PASSWORD FOR LEVEL 20 : bW9kBv5WC3P4yoDyf12LSdGuNz5ka6hY
+
+
+OR
+
+TERMINAL 1 : $ echo "level20 password" | nc -l 12345
+
+TERMINAL 2 : $ ./suconnect 12345
+
+it returns the level 21 password in terminal 1
+

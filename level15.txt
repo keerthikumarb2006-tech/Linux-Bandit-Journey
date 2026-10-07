@@ -1,0 +1,16 @@
+GOAL : The password for the next level can be retrieved by submitting the password of the current level to port 30001 on localhost using SSL/TLS encryption.
+
+COMMANDS : ssh, telnet, nc, ncat, socat, openssl, s_client, nmap, netstat, ss
+
+GIVEN : we have to submit the level 15 password along port 30001 to the localhost to retrieve level16 password
+
+COMMANDS USED : 
+
+$ ncat --ssl localhost 30001
+pbLYuZtTg4MgaqfJx8jbA9gKKGqM68A7
+
+PASSWORD FOR LEVEL 16 : kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
+
+Diff between nc and ncat : ncat has built-in SSL encryption (--ssl), while traditional nc requires external tools like openssl
+
+nc is the classic tool by Hobbit, whereas ncat is a completely new implementation built using Nmap's networking libraries without sharing original source code.

@@ -1,0 +1,15 @@
+GOAL : There are 2 files in the homedirectory: passwords.old and passwords.new. The password for the next level is in passwords.new and is the only line that has been changed between passwords.old and passwords.new
+
+COMMANDS : cat,grep,ls,diff
+
+GIVEN : only one line has been changed in two of the files rest are all the same so 2 among the changed one will be the password 
+
+COMMANDS USED  : 
+
+$ diff passwords.old passwords.new 
+
+PASSWORD FOR LEVEL 18 : OQxXZjELndr90zuhOTDYBEomI0SZITXI
+
+try 2 password which will be displays and that will be the password for the next level
+
+But for the next level there is a hint "byebye" so try and find out in the next level about it 

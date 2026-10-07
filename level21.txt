@@ -1,0 +1,27 @@
+GOAL : A program is running automatically at regular intervals from cron, the time-based job scheduler. Look in /etc/cron.d/ for the configuration and see what command is being executed.
+
+COMMANDS : cron, crontab, crontab(5) (use “man 5 crontab” to access this)
+
+GIVEN : look in /etc/cron.d/
+
+COMMANDS USED : 
+
+$ ls /etc/cron.d
+$ cat /etc/cron.d/cronjob_bandit22 -->
+
+output for this command was -> 
+@reboot bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+* * * * * bandit22 /usr/bin/cronjob_bandit22.sh &> /dev/null
+
+$ cat /usr/bin/cronjob_bandit22.sh ->
+
+output for this command was ->
+#!/bin/bash
+chmod 644 /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+cat /etc/bandit_pass/bandit22 > /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+
+$cat /tmp/t7O6lds9S0RqQh9aMcz6ShpAoZKF7fgv
+ after executing this command i found this psasword.
+
+PASSWORD FOR LEVEL 22 : RYVux2rHEm9tiXHmLFzuR7Vhx6AZQMEz
+

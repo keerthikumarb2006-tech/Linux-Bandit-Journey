@@ -1,0 +1,23 @@
+GOAL : The password for the next level is stored in a file readme in the homedirectory. Unfortunately, someone has modified .bashrc to log you out when you log in with SSH.
+
+COMMANDS : ssh, ls, cat
+
+GIVEN : The password will be found in readme file but cannot login using ssh 
+
+COMMANDS USED : 
+$ man ssh | grep terminal 
+$ ssh -t bandit18@bandit.labs.overthewire.org -p 2220 /bin/sh
+
+PASSWORD FOR LEVEL 19 : KpsOfPkcP7i1FlIExk2QEjyt6dw8dxZI
+
+man ssh | grep terminal --> -T      Disable pseudo-terminal allocation.
+       -t      Force  pseudo-terminal  allocation.   This  can  be  used to execute arbitrary
+       If a pseudo-terminal has been allocated, the user may use the escape characters  noted
+       If  no  pseudo-terminal has been allocated, the session is transparent and can be used
+       When a pseudo-terminal has been requested, ssh supports a number of functions  through
+                             current terminal if it was run from a terminal.  If ssh does not
+                             have  a  terminal associated with it but DISPLAY and SSH_ASKPASS
+
+/bin/sh --> run a shell on remote machine 
+            Why /bin/sh matters in Bandit 18
+In the Bandit challenge, bandit18 is configured so that a normal SSH login is immediately terminated. Supplying /bin/sh as the SSH command attempts to bypass that behavior by asking SSH to execute the shell directly.

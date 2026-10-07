@@ -1,0 +1,26 @@
+GOAL : The credentials for the next level can be retrieved by submitting the password of the current level to a port on localhost in the range 31000 to 32000. First find out which of these ports have a server listening on them. Then find out which of those speak SSL/TLS and which don’t. There is only 1 server that will give the next credentials, the others will simply send back to you whatever you send to it.
+
+COMMANDS : ssh, telnet, nc, ncat, socat, openssl, s_client, nmap, netstat, ss
+
+GIVEN : password willl be found when you submit the level16 password to localhost via port between 31000-32000
+
+COMMANDS USED :
+
+$ nmap localhost -p 31000-32000
+$ ncat --ssl localhost portnumber
+  kS0Hf0u5HiXFwKMKFqXvPdOTNGGa0X8V
+$ nano bandit17_key
+$ chmod 600 bandit17_key
+
+PASSWORD FOR LEVEL 17 : pWXMAZoxGC8JmDMfmT5MGEsobMM3vnj2
+
+nmap localhost 31000-32000 -->was used to find out the ports which are open 
+ncat --ssl localhost portnumber -->we try the portnumbers listed from the above commands in this command and the RSA KEY will be found 
+
+now exit the bandit16 level and create a file and paste the key which u got into this file and execute the below command 
+$ chmod 600 filename
+
+now try logging in with "ssh -i bandit17_key bandit17@bandit.labs.overthewire.org -p 2220 "
+
+when we are logged into level 17 retrieve its password by using the below command
+"$ cat /etc/bandit_pass/bandit17 "
